@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE84FC532A874E0D00933B25 /* QuadraticEquation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE84FC522A874E0D00933B25 /* QuadraticEquation.m */; };
+		CE84FC5C2A876ED500933B25 /* FirstController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE84FC5A2A876ED500933B25 /* FirstController.xib */; };
 		CECC9D2C2A86AC4D004DF69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC9D2B2A86AC4D004DF69D /* AppDelegate.swift */; };
-		CECC9D2E2A86AC4D004DF69D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC9D2D2A86AC4D004DF69D /* ViewController.swift */; };
 		CECC9D302A86AC4F004DF69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECC9D2F2A86AC4F004DF69D /* Assets.xcassets */; };
-		CECC9D332A86AC4F004DF69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC9D312A86AC4F004DF69D /* Main.storyboard */; };
+		CECC9D3B2A86AE1E004DF69D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC9D3A2A86AE1E004DF69D /* main.swift */; };
+		CECC9D462A86BDEA004DF69D /* FirstController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC9D442A86BDEA004DF69D /* FirstController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE84FC512A874E0D00933B25 /* Quadratic equation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quadratic equation-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE84FC522A874E0D00933B25 /* QuadraticEquation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadraticEquation.m; sourceTree = "<group>"; };
+		CE84FC542A874EBA00933B25 /* QuadraticEquation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadraticEquation.h; sourceTree = "<group>"; };
+		CE84FC5D2A876EEA00933B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FirstController.xib; sourceTree = "<group>"; };
+		CE84FC5E2A876EF300933B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FirstController.strings; sourceTree = "<group>"; };
+		CE84FC5F2A87706900933B25 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/FirstController.strings; sourceTree = "<group>"; };
 		CECC9D282A86AC4D004DF69D /* Quadratic equation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quadratic equation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC9D2B2A86AC4D004DF69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CECC9D2D2A86AC4D004DF69D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CECC9D2F2A86AC4F004DF69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CECC9D322A86AC4F004DF69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CECC9D342A86AC4F004DF69D /* Quadratic_equation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quadratic_equation.entitlements; sourceTree = "<group>"; };
+		CECC9D3A2A86AE1E004DF69D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CECC9D442A86BDEA004DF69D /* FirstController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE84FC502A874D8400933B25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE84FC542A874EBA00933B25 /* QuadraticEquation.h */,
+				CE84FC522A874E0D00933B25 /* QuadraticEquation.m */,
+				CE84FC512A874E0D00933B25 /* Quadratic equation-Bridging-Header.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CECC9D1F2A86AC4D004DF69D = {
 			isa = PBXGroup;
 			children = (
@@ -52,13 +70,23 @@
 		CECC9D2A2A86AC4D004DF69D /* Quadratic equation */ = {
 			isa = PBXGroup;
 			children = (
+				CECC9D482A87450E004DF69D /* FirstController */,
 				CECC9D2B2A86AC4D004DF69D /* AppDelegate.swift */,
-				CECC9D2D2A86AC4D004DF69D /* ViewController.swift */,
 				CECC9D2F2A86AC4F004DF69D /* Assets.xcassets */,
-				CECC9D312A86AC4F004DF69D /* Main.storyboard */,
 				CECC9D342A86AC4F004DF69D /* Quadratic_equation.entitlements */,
+				CECC9D3A2A86AE1E004DF69D /* main.swift */,
 			);
 			path = "Quadratic equation";
+			sourceTree = "<group>";
+		};
+		CECC9D482A87450E004DF69D /* FirstController */ = {
+			isa = PBXGroup;
+			children = (
+				CE84FC502A874D8400933B25 /* Model */,
+				CECC9D442A86BDEA004DF69D /* FirstController.swift */,
+				CE84FC5A2A876ED500933B25 /* FirstController.xib */,
+			);
+			path = FirstController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +121,7 @@
 				TargetAttributes = {
 					CECC9D272A86AC4D004DF69D = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -102,6 +131,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				uk,
 				Base,
 			);
 			mainGroup = CECC9D1F2A86AC4D004DF69D;
@@ -119,8 +149,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE84FC5C2A876ED500933B25 /* FirstController.xib in Resources */,
 				CECC9D302A86AC4F004DF69D /* Assets.xcassets in Resources */,
-				CECC9D332A86AC4F004DF69D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECC9D2E2A86AC4D004DF69D /* ViewController.swift in Sources */,
+				CECC9D462A86BDEA004DF69D /* FirstController.swift in Sources */,
+				CECC9D3B2A86AE1E004DF69D /* main.swift in Sources */,
+				CE84FC532A874E0D00933B25 /* QuadraticEquation.m in Sources */,
 				CECC9D2C2A86AC4D004DF69D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,12 +171,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CECC9D312A86AC4F004DF69D /* Main.storyboard */ = {
+		CE84FC5A2A876ED500933B25 /* FirstController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CECC9D322A86AC4F004DF69D /* Base */,
+				CE84FC5D2A876EEA00933B25 /* Base */,
+				CE84FC5E2A876EF300933B25 /* en */,
+				CE84FC5F2A87706900933B25 /* uk */,
 			);
-			name = Main.storyboard;
+			name = FirstController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -268,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Quadratic equation/Quadratic_equation.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -276,7 +311,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -286,6 +320,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Efimenko.Quadratic-equation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Quadratic equation/FirstController/Model/Quadratic equation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -295,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Quadratic equation/Quadratic_equation.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -303,7 +340,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Efimenko.Quadratic-equation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Quadratic equation/FirstController/Model/Quadratic equation-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

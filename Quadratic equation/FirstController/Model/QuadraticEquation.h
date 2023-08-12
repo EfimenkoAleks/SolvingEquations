@@ -5,8 +5,12 @@
 //  Created by user on 12.08.2023.
 //
 
-#ifndef QuadraticEquation_h
-#define QuadraticEquation_h
+#import <Foundation/Foundation.h>
 
+@interface QuadraticEquation : NSObject
 
-#endif /* QuadraticEquation_h */
+@property (strong, nonatomic) id someProperty;
+
+- (NSDictionary *)quadraticEquation:(int)number1 secondnumber:(int)number2 thirdnumber:(int)number3;
+
+@end

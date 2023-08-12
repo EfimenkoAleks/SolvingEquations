@@ -6,7 +6,7 @@
 "F0z-JX-Cv5.title" = "Window";
 
 /* Class = "NSTextFieldCell"; title = "Sample: ax2 + bx + c = 0"; ObjectID = "FyS-mP-Dwj"; */
-"FyS-mP-Dwj.title" = "Sample: ax2 + bx + c = 0";
+"FyS-mP-Dwj.title" = "Зразок: ax2 + bx + c = 0";
 
 /* Class = "NSTextFieldCell"; title = "a ="; ObjectID = "LFJ-mG-NtQ"; */
 "LFJ-mG-NtQ.title" = "a =";
@@ -18,7 +18,7 @@
 "rSn-f8-e3j.title" = "x2 = 0";
 
 /* Class = "NSTextFieldCell"; title = "Solutions"; ObjectID = "zhy-kX-0Ln"; */
-"zhy-kX-0Ln.title" = "Solutions";
+"zhy-kX-0Ln.title" = "Рішення";
 
 /* Class = "NSTextFieldCell"; title = "x1 = 0"; ObjectID = "zwr-Dy-hc1"; */
 "zwr-Dy-hc1.title" = "x1 = 0";

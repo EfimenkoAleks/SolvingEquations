@@ -9,15 +9,15 @@ import Cocoa
 
 class FirstController: NSWindowController {
 
-    @IBOutlet weak var sampleTitleTF: NSTextField!
-    @IBOutlet weak var solutionsTitleTF: NSTextField!
+    @IBOutlet private weak var sampleTitleTF: NSTextField!
+    @IBOutlet private weak var solutionsTitleTF: NSTextField!
     
-    @IBOutlet weak var x1AnswerTF: NSTextField!
-    @IBOutlet weak var x2AnswerTF: NSTextField!
+    @IBOutlet private weak var x1AnswerTF: NSTextField!
+    @IBOutlet private weak var x2AnswerTF: NSTextField!
    
-    @IBOutlet weak var aInputTF: NSTextField!
-    @IBOutlet weak var bInputTF: NSTextField!
-    @IBOutlet weak var cInputTF: NSTextField!
+    @IBOutlet private weak var aInputTF: NSTextField!
+    @IBOutlet private weak var bInputTF: NSTextField!
+    @IBOutlet private weak var cInputTF: NSTextField!
     
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -30,46 +30,23 @@ class FirstController: NSWindowController {
         cInputTF.delegate = self
     }
     
-    func ffff() {
-        guard let a = Double(aInputTF.stringValue),
-              let b = Double(bInputTF.stringValue),
-              let c = Double(cInputTF.stringValue) else { return }
+    private func calculation() {
+        guard let a = Int32(aInputTF.stringValue),
+              let b = Int32(bInputTF.stringValue),
+              let c = Int32(cInputTF.stringValue) else { return }
         
-        let bSquared = b * b
-        let discriminant = bSquared - (4 * a * c)
-        let isImaginary = discriminant < 0
-        let discrimimantAbsSqrt = sqrt(fabs(discriminant))
-
-        if isImaginary {
-            print("X = (\(-b) + \(discrimimantAbsSqrt)i)/\(2*a) & (\(-b) - \(discrimimantAbsSqrt)i)/\(2*a)")
-            let ans1 = -b + (discrimimantAbsSqrt / (2 * a))
-            let ans2 = -b - (discrimimantAbsSqrt / (2 * a))
-            x1AnswerTF.stringValue = "x1 = \(ans1)"
-            x2AnswerTF.stringValue = "x2 = \(ans2)"
-        } else {
-            let topFormula = -b + discrimimantAbsSqrt
-            let bottomFormula = 2 * a
-            let totalX = topFormula / bottomFormula
-
-            let topFormula2 = -b - discrimimantAbsSqrt
-            let totalX2 = topFormula2 / bottomFormula
-
-            print("X = \(totalX) & \(totalX2)")
-            x1AnswerTF.stringValue = "x1 = \(totalX)"
-            x2AnswerTF.stringValue = "x2 = \(totalX2)"
-//                .styleHashtags(Attrs().font(.boldSystemFont(ofSize: 45)))
-//                    .styleMentions(Attrs().foregroundColor(.red))
-//                    .attributedString
-        }
+        let qud = QuadraticEquation()
+        let rez = qud.quadraticEquation(a, secondnumber: b, thirdnumber: c)
+        x1AnswerTF.stringValue = "x1 = \(rez?["first"] as! String)"
+        x2AnswerTF.stringValue = "x2 = \(rez?["second"] as! String)"
     }
-  
 }
 
 extension FirstController: NSTextFieldDelegate {
     
     func controlTextDidChange(_ obj: Notification) {
         if aInputTF != nil && !aInputTF.stringValue.isEmpty && bInputTF != nil && !bInputTF.stringValue.isEmpty && cInputTF != nil && !cInputTF.stringValue.isEmpty {
-            ffff()
+            calculation()
         }
     }
 }
